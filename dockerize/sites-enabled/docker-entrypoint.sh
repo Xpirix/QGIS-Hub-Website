@@ -26,6 +26,7 @@ if [ $# -eq 1 ]; then
 			echo "Run in prod SSL mode"
 			CONF_FILE=prod-ssl.conf
 			ln -s /etc/nginx/sites-available/$CONF_FILE /etc/nginx/conf.d/$CONF_FILE
+			ln -s /etc/nginx/sites-available/acme-challenge.conf /etc/nginx/conf.d/acme-challenge.conf
 			exec nginx -g "daemon off;"
 			;;
 		# Staging SSL mode, run using uwsgi
@@ -33,6 +34,7 @@ if [ $# -eq 1 ]; then
 			echo "Run in staging SSL mode"
 			CONF_FILE=staging-ssl.conf
 			ln -s /etc/nginx/sites-available/$CONF_FILE /etc/nginx/conf.d/$CONF_FILE
+			ln -s /etc/nginx/sites-available/acme-challenge.conf /etc/nginx/conf.d/acme-challenge.conf
 			exec nginx -g "daemon off;"
 			;;
 	esac
