@@ -28,10 +28,11 @@
     <div class="column is-6 has-text-right">
       <div class="buttons are-small is-justify-content-flex-end">
           {% if user == object_detail.creator or user.is_staff %}
-            <a class="button is-success is-outlined" href="{% url url_update object_detail.id %}" title="{% trans "Edit" %}">
+            <a class="button is-success is-outlined" href="{% url url_update object_detail.id %}">
               <span class="icon">
                 <i class="fas fa-pencil-alt"></i>
               </span>
+              <span>{% trans "Update" %}</span>
             </a>
             <a class="button is-danger is-outlined" href="{% url url_delete object_detail.id %}" title="{% trans "Delete" %}">
               <span class="icon">

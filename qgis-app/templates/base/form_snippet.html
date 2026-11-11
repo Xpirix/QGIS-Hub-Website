@@ -33,6 +33,9 @@
         </span>
       </label>
     </div>
+    {% if form.instance.pk and field.value %}
+      <p class="help">{% trans "Leave this empty to keep your current file." %}</p>
+    {% endif %}
     {% if field.errors %}
       {% for error in field.errors %}
         <p class="help is-danger has-text-weight-medium">{{ error }}</p>
