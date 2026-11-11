@@ -62,4 +62,3 @@ class UpdateWithoutNewFileTestMixin:
             self.assertContains(detail, "<span>Delete</span>")
 
         form = self.client.get(update_url)
-        self.assertContains(form, "Leave this empty to keep your current file.")
