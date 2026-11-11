@@ -42,11 +42,15 @@ class UpdateWithoutNewFileTestMixin:
         self.assertEqual(resource.file.name, stored_name)
         self.assertTrue(os.path.exists(resource.file.path))
 
-    def test_author_sees_update_button_and_file_hint(self) -> None:
+    def test_author_sees_labelled_buttons_and_file_hint(self) -> None:
         resource = self.create_resource()
         self.client.force_login(resource.creator)
         update_url = reverse(self.update_url_name, kwargs={"pk": resource.pk})
         detail_url = reverse(self.detail_url_name, kwargs={"pk": resource.pk})
+        delete_url = reverse(
+            self.update_url_name.replace("_update", "_delete"),
+            kwargs={"pk": resource.pk},
+        )
 
         for approved in (False, True):
             resource.approved = approved
@@ -54,6 +58,8 @@ class UpdateWithoutNewFileTestMixin:
             detail = self.client.get(detail_url)
             self.assertContains(detail, f'href="{update_url}"')
             self.assertContains(detail, "<span>Update</span>")
+            self.assertContains(detail, f'href="{delete_url}"')
+            self.assertContains(detail, "<span>Delete</span>")
 
         form = self.client.get(update_url)
         self.assertContains(form, "Leave this empty to keep your current file.")
