@@ -1,5 +1,6 @@
 import ast
 import os
+import sys
 
 from settings import *
 
@@ -200,6 +201,12 @@ DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 
 # allauth requires its AccountMiddleware
 MIDDLEWARE.append("allauth.account.middleware.AccountMiddleware")
+
+# urls.py mounts the toolbar under DEBUG, and its URLs need the app installed.
+# The toolbar refuses to run under the test runner, so tests leave it out.
+if DEBUG and "test" not in sys.argv:
+    INSTALLED_APPS += ["debug_toolbar"]
+    MIDDLEWARE.append("debug_toolbar.middleware.DebugToolbarMiddleware")
 
 
 # Sentry
