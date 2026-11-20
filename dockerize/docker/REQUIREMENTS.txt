@@ -6,7 +6,7 @@ django-allauth~=65.15
 oauthlib~=3.2
 cryptography~=46.0.6
 django-taggit~=6.1
-django-tinymce==4.1.0
+django-tinymce~=5.0
 psycopg2-binary~=2.9
 # Updates for Django 2
 git+https://github.com/metamatik/django-templatetag-sugar.git@33bc10cc560521f7932c66e677b32276e4ad6915
