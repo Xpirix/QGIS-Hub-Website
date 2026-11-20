@@ -2,9 +2,9 @@ django~=5.2
 django-auth-ldap~=5.3
 python-ldap~=3.4
 # Social authentication (OAuth via django-allauth)
-django-allauth~=65.15
-oauthlib~=3.2
-cryptography~=46.0.6
+django-allauth~=65.16
+oauthlib~=3.3
+cryptography~=50.0
 django-taggit~=6.1
 django-tinymce~=5.0
 psycopg2-binary~=2.9
@@ -30,13 +30,13 @@ django-debug-toolbar~=6.3
 whoosh~=2.7
 django-haystack~=3.4
 
-requests~=2.31
+requests~=2.33
 
-markdown~=3.5
+markdown~=3.10
 
-djangorestframework~=3.14
-pyjwt~=2.8
-djangorestframework-simplejwt~=5.3
+djangorestframework~=3.16
+pyjwt~=2.14
+djangorestframework-simplejwt~=5.5
 sorl-thumbnail-serializer-field==0.2.1
 drf-yasg~=1.21
 django-rest-multiple-models==2.1.3
@@ -46,9 +46,9 @@ PyWavefront==1.3.3
 django-matomo==0.1.6
 uwsgi~=2.0
 
-sentry-sdk~=2.2
-setuptools~=75.1
-beautifulsoup4~=4.12
-django-webpack-loader~=3.1
+sentry-sdk~=2.60
+setuptools~=84.0
+beautifulsoup4~=4.14
+django-webpack-loader~=3.2
 
-bandit~=1.8
+bandit~=1.9
