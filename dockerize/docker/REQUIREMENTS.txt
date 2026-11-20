@@ -44,7 +44,6 @@ djangorestframework~=3.14
 pyjwt~=2.8
 djangorestframework-simplejwt~=5.3
 sorl-thumbnail-serializer-field==0.2.1
-django-rest-auth==0.9.5
 drf-yasg~=1.21
 django-rest-multiple-models==2.1.3
 
