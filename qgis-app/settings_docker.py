@@ -184,7 +184,6 @@ REST_FRAMEWORK = {
     "TEST_REQUEST_DEFAULT_FORMAT": "json",
 }
 
-GEOIP_PATH = "/var/opt/maxmind/"
 METABASE_DOWNLOAD_STATS_URL = os.environ.get("METABASE_DOWNLOAD_STATS_URL", "/metabase")
 
 # Set plugin token access and refresh validity to a very long duration

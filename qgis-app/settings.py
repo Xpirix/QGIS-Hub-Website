@@ -326,7 +326,6 @@ if DEBUG:
         "debug_toolbar.panels.redirects.RedirectsPanel",
     ]
 
-GEOIP_PATH = "/var/opt/maxmind/"
 # Token access and refresh validity
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(days=15),
