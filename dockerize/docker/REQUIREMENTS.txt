@@ -28,7 +28,7 @@ sorl-thumbnail~=13.0
 django-extensions~=4.1
 django-debug-toolbar~=4.2
 whoosh~=2.7
-django-haystack~=3.2
+django-haystack~=3.4
 
 requests~=2.31
 
