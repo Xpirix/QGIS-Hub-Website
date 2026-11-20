@@ -1,5 +1,5 @@
 django~=5.2
-django-auth-ldap~=4.6
+django-auth-ldap~=5.3
 python-ldap~=3.4
 # Social authentication (OAuth via django-allauth)
 django-allauth~=65.15
