@@ -25,7 +25,7 @@ git+https://github.com/Xpirix/django-simplemenu.git@687ba03e73fc24b2338a3ce83901
 django-bootstrap-pagination-forked~=1.7
 django-sortable-listview~=0.43
 sorl-thumbnail~=13.0
-django-extensions~=3.2
+django-extensions~=4.1
 django-debug-toolbar~=4.2
 whoosh~=2.7
 django-haystack~=3.2
