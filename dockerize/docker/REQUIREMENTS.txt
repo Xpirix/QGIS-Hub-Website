@@ -24,7 +24,7 @@ django-taggit-templatetags
 git+https://github.com/Xpirix/django-simplemenu.git@687ba03e73fc24b2338a3ce8390104a4b047ea0f
 django-bootstrap-pagination-forked~=1.7
 django-sortable-listview~=0.43
-sorl-thumbnail~=12.10
+sorl-thumbnail~=13.0
 django-extensions~=3.2
 django-debug-toolbar~=4.2
 whoosh~=2.7
